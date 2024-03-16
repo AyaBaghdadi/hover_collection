@@ -10,6 +10,7 @@ import UIKit
 extension ViewController {
     
      func showHoverToast(at location: CGPoint, for indexPath: IndexPath) {
+         
         dismissHoverToast() // Dismiss any existing toast
 
         guard let cellAttributes = collectionView.layoutAttributesForItem(at: indexPath) else {
@@ -22,7 +23,7 @@ extension ViewController {
         let toastOriginY = cellAttributes.frame.origin.y + cellAttributes.frame.height + 8
 
         let label = UILabel()
-        label.text = "( \(indexPath.row + 1) ) \n Technicalisto Logo hover"
+        label.text = "( \(indexPath.row + 1) ) \(self.myData[indexPath.row])"
         label.textAlignment = .center
         label.textColor = UIColor(named: "color_white")
         label.font = UIFont.systemFont(ofSize: 12) // Set font size
@@ -42,6 +43,7 @@ extension ViewController {
 
         self.view.addSubview(toastView)
         self.hoverToastView = toastView
+         
     }
 
      func dismissHoverToast() {

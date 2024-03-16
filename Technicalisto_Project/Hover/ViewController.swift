@@ -12,6 +12,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     var hoverToastView: UIView?
 
+    var myData = ["IOS" , "Android" , "Frontend" , "Backend" , "Graphic Designer" , "Tester" , "Project Manager" , "Project Coordinator" , "Team Leader" , "Technical Team Lead"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

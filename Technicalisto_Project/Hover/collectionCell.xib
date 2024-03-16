@@ -21,6 +21,7 @@
                         <rect key="frame" x="1" y="1" width="249" height="173"/>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" red="0.18374401330000001" green="0.37875425820000003" blue="0.70199400190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="09k-37-5T3" secondAttribute="bottom" constant="1" id="5Jm-P3-Ygt"/>
                     <constraint firstItem="09k-37-5T3" firstAttribute="top" secondItem="4c2-4n-2Nk" secondAttribute="top" constant="1" id="sdg-rD-nGA"/>
