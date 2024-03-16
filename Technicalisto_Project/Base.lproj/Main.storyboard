@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZTi-4Z-umo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kUk-HG-2cB">
+            <objects>
+                <viewController id="ZTi-4Z-umo" customClass="ViewController" customModule="Technicalisto_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lEq-u2-PD8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technicalisto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-B5-qpi">
+                                <rect key="frame" x="154" y="68" width="106" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zlo-ZP-Mqx">
+                                <rect key="frame" x="20" y="120" width="374" height="734"/>
+                                <color key="backgroundColor" name="color_white"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vEF-UP-8kc">
+                                    <size key="itemSize" width="180" height="167"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZTi-4Z-umo" id="Y3d-tm-W39"/>
+                                    <outlet property="delegate" destination="ZTi-4Z-umo" id="zJX-is-i6C"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Et-xJ-NnI"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Et-xJ-NnI" firstAttribute="trailing" secondItem="zlo-ZP-Mqx" secondAttribute="trailing" constant="20" id="AmZ-6y-XZC"/>
+                            <constraint firstItem="4Et-xJ-NnI" firstAttribute="bottom" secondItem="zlo-ZP-Mqx" secondAttribute="bottom" constant="8" id="OPg-fO-byS"/>
+                            <constraint firstItem="zlo-ZP-Mqx" firstAttribute="top" secondItem="bjw-B5-qpi" secondAttribute="bottom" constant="30" id="Z6h-KU-8kW"/>
+                            <constraint firstItem="zlo-ZP-Mqx" firstAttribute="leading" secondItem="4Et-xJ-NnI" secondAttribute="leading" constant="20" id="aqb-6n-zLM"/>
+                            <constraint firstItem="bjw-B5-qpi" firstAttribute="top" secondItem="4Et-xJ-NnI" secondAttribute="top" constant="20" id="u8c-wR-fAK"/>
+                            <constraint firstItem="bjw-B5-qpi" firstAttribute="centerX" secondItem="4Et-xJ-NnI" secondAttribute="centerX" id="yzV-2J-MQ3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="zlo-ZP-Mqx" id="teJ-a1-h3I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jB8-dy-KRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8984.0579710144939" y="2252.0089285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
