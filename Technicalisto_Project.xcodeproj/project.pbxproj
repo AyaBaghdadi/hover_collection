@@ -14,6 +14,9 @@
 		10C288FA26CEEC9F000724E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C288F926CEEC9F000724E6 /* Assets.xcassets */; };
 		10C288FD26CEEC9F000724E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C288FB26CEEC9F000724E6 /* LaunchScreen.storyboard */; };
 		10C2890526CEECAB000724E6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 10C2890426CEECAB000724E6 /* README.md */; };
+		BA118EC32BA59CF500EF11AB /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA118EC22BA59CF500EF11AB /* CollectionVC.swift */; };
+		BA118EC52BA59D4000EF11AB /* HoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA118EC42BA59D4000EF11AB /* HoverVC.swift */; };
+		BA118EC82BA59EB100EF11AB /* GestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA118EC72BA59EB100EF11AB /* GestureVC.swift */; };
 		BAD8ABA52BA57AE000FB4E54 /* collectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD8ABA42BA57AE000FB4E54 /* collectionCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		10C288FC26CEEC9F000724E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10C288FE26CEEC9F000724E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C2890426CEECAB000724E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA118EC22BA59CF500EF11AB /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
+		BA118EC42BA59D4000EF11AB /* HoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverVC.swift; sourceTree = "<group>"; };
+		BA118EC72BA59EB100EF11AB /* GestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureVC.swift; sourceTree = "<group>"; };
 		BAD8ABA42BA57AE000FB4E54 /* collectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = collectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,9 +66,8 @@
 		10C288EF26CEEC9E000724E6 /* Technicalisto_Project */ = {
 			isa = PBXGroup;
 			children = (
+				BA118EC62BA59E5800EF11AB /* Hover */,
 				10C2890426CEECAB000724E6 /* README.md */,
-				105EA15126EB84F500638DE4 /* ViewController.swift */,
-				BAD8ABA42BA57AE000FB4E54 /* collectionCell.xib */,
 				10C288F026CEEC9E000724E6 /* AppDelegate.swift */,
 				10C288F226CEEC9E000724E6 /* SceneDelegate.swift */,
 				10C288F626CEEC9E000724E6 /* Main.storyboard */,
@@ -71,6 +76,18 @@
 				10C288FE26CEEC9F000724E6 /* Info.plist */,
 			);
 			path = Technicalisto_Project;
+			sourceTree = "<group>";
+		};
+		BA118EC62BA59E5800EF11AB /* Hover */ = {
+			isa = PBXGroup;
+			children = (
+				105EA15126EB84F500638DE4 /* ViewController.swift */,
+				BA118EC22BA59CF500EF11AB /* CollectionVC.swift */,
+				BA118EC42BA59D4000EF11AB /* HoverVC.swift */,
+				BA118EC72BA59EB100EF11AB /* GestureVC.swift */,
+				BAD8ABA42BA57AE000FB4E54 /* collectionCell.xib */,
+			);
+			path = Hover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +164,9 @@
 			files = (
 				10C288F126CEEC9E000724E6 /* AppDelegate.swift in Sources */,
 				105EA15226EB84F500638DE4 /* ViewController.swift in Sources */,
+				BA118EC82BA59EB100EF11AB /* GestureVC.swift in Sources */,
+				BA118EC52BA59D4000EF11AB /* HoverVC.swift in Sources */,
+				BA118EC32BA59CF500EF11AB /* CollectionVC.swift in Sources */,
 				10C288F326CEEC9E000724E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
