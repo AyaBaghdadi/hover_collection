@@ -19,7 +19,7 @@ extension ViewController {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10 // Assuming you have 10 items
+        return self.myData.count
         
     }
 
